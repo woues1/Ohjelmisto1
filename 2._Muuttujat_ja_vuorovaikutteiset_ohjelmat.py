@@ -2,7 +2,8 @@
 import numpy as np
 
 # 0.1 
-  print("Hei, Toni Hirvikallio!")
+
+print("Hei, Toni Hirvikallio!")
 
 # 1
 
