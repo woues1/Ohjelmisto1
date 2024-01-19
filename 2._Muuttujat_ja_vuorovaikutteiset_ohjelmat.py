@@ -1,5 +1,10 @@
 
 import numpy as np
+
+# 0.1 
+
+print("Hei, Toni Hirvikallio!")
+
 # 1
 
 k = input("Anna nimesi: ")
