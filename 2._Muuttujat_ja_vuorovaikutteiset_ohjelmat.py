@@ -48,3 +48,4 @@ print(int(kg), "kilogrammaa ja", g, "grammaa.")
 
 print("kuuden numeron koodi väliltä 0...9", np.random.randint(0, 10, 3))
 print("neljän numeron koodi väliltä 0...6", np.random.randint(0, 7, 4))
+
