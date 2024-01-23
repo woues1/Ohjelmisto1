@@ -1,7 +1,5 @@
-
-
-import sympy as smp
 import numpy as np
+
 # 1
 
 syote = int(input(f"Anna heitettävien noppien määrä"))
