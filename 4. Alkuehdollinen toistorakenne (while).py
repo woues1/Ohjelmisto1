@@ -69,17 +69,20 @@ while True:
 
 # 6
 
-A = math.pi*math.pow(1,2)
 pisteiden_maara = int(input(f"anna pisteiden luku määrä"))
 i = 0
 Pisteet_ympyran_sisalla = 0
+
 while i < pisteiden_maara:
     x = np.random.uniform(-1, 1)
     y = np.random.uniform(-1, 1)
     i += 1
+
     if math.pow(x,2)+math.pow(y,2) <= 1:
         Pisteet_ympyran_sisalla += 1
+
 pii_likuarvo = 4 * (Pisteet_ympyran_sisalla / pisteiden_maara)
+
 print(f"{pii_likuarvo:.5f}")
 
 
