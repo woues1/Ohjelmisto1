@@ -2,6 +2,7 @@
 
 import sympy as smp
 import numpy as np
+
 # 1
 
 syote = int(input(f"Anna heitettävien noppien määrä"))
@@ -20,12 +21,14 @@ numerot = []
 while True:
     luku = input("Anna luku")
     if luku != '' and luku.isnumeric():
-        numerot.append(luku)
+        numerot.append(int(luku))
     else:
         break
 
 numerot.sort(reverse=True)
-for i in numerot: print(i, end=" ")
+
+for i in numerot:
+    print(i, end=" ")
 
 # 3
 
