@@ -2,6 +2,7 @@
 
 import sympy as smp
 import numpy as np
+'''
 # 1
 
 syote = int(input(f"Anna heitettävien noppien määrä"))
@@ -12,6 +13,7 @@ for i in range(syote+1):
 print(f"{sum(arvotut_luvut)}")
 
 arvotut_luvut = []
+'''
 
 # 2
 
@@ -20,12 +22,15 @@ numerot = []
 while True:
     luku = input("Anna luku")
     if luku != '' and luku.isnumeric():
-        numerot.append(luku)
+        numerot.append(int(luku))
     else:
         break
 
+numerot.sort()
 numerot.sort(reverse=True)
 for i in numerot: print(i, end=" ")
+
+'''
 
 # 3
 
@@ -50,3 +55,4 @@ for i in range(5):
     kaupungit.append(kaupunki)
 for i in kaupungit:
     print(i)
+'''

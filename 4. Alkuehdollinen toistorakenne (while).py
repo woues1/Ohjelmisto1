@@ -1,5 +1,6 @@
 import numpy as np
 import math
+
 # 1
 
 num = 0
@@ -70,7 +71,9 @@ while True:
 # 6
 
 pisteiden_maara = int(input(f"anna pisteiden luku määrä"))
+
 i = 0
+
 Pisteet_ympyran_sisalla = 0
 
 while i < pisteiden_maara:
@@ -84,5 +87,3 @@ while i < pisteiden_maara:
 pii_likuarvo = 4 * (Pisteet_ympyran_sisalla / pisteiden_maara)
 
 print(f"{pii_likuarvo:.5f}")
-
-
