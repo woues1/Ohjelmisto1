@@ -6,7 +6,7 @@ def pizza_neliömetri_hinta(halkaisija, hinta):
 
 def main():
     pizza1 = pizza_neliömetri_hinta(float(input("anna pizza halkaisija: ")),
-                                    int(input("anna pizzan hinta: ")))
+                                    float(input("anna pizzan hinta: ")))
     pizza2 = pizza_neliömetri_hinta(float(input("anna pizza halkaisija: ")),
                                     float(input("anna pizzan hinta: ")))
     if pizza1 < pizza2:
