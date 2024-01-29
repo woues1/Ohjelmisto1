@@ -1,7 +1,7 @@
 
 import math
 def pizza_neliömetri_hinta(halkaisija, hinta):
-    neliömetri_hinta = hinta/(math.pi * halkaisija)
+    neliömetri_hinta = hinta/(math.pi * (halkaisija/100))
     return neliömetri_hinta
 
 def main():
