@@ -5,15 +5,12 @@ def heita_noppa(tahko) -> int:
 
 def main():
     tahko = int(input("Anna nopan tahko"))
+
     while True:
-
         tulos = heita_noppa(tahko)
-        if tulos != tahko:
-            print(tulos)
-        else:
-            print(tulos)
+        print(tulos)
+        if tulos == tahko:
             break
-
 
 if __name__ == '__main__':
     main()
