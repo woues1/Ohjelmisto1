@@ -1,5 +1,4 @@
 import numpy as np
-
 def heita_noppa(tahko) -> int:
     return np.random.randint(1, tahko+1)
 
