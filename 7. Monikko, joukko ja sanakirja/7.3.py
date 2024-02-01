@@ -1,8 +1,9 @@
 lentokentat = {'EFHK': 'helsinki-vantaa'}
 
 while True:
-    Valinta = input('Lisää / Etsi lentokenttää(L/E): ').upper()
-
+    Valinta = input('Lisää / Etsi lentokenttää(L/E/tyhjä lopettaa): ').upper()
+    if Valinta == '':
+        break
     if Valinta == 'L':
         tunnus = input('ICAO tunnus: ').upper()
         nimi = input('Lentokentän nimi: ')
