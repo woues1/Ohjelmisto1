@@ -1,17 +1,21 @@
-from SQL_YHTEYS import sql_yhteys
+from SQL_YHTEYS import sql_search
 
-yhteys = sql_yhteys()
+
 def hae_lentokentta(ICAO):
-    cursor = yhteys.cursor()
-    sql = f"select name, municipality from airport where ident = '{ICAO}'"
-    cursor.execute(sql)
-    result = cursor.fetchall()
 
-    cursor.close()
-    yhteys.close()
+    sql = f"select name, municipality from airport where ident = '{ICAO}'"
+    result = sql_search(sql)
+
     return result
 
-icao = input("anna lentokentän icao koodi ")
-tulos = hae_lentokentta(icao)
-for i in tulos:
-    print(f"Lentokentän nimi: {i[0]}\nLetonkentän kunta: {i[1]}")
+
+def main():
+    icao = input("anna lentokentän icao koodi ")
+    tulos = hae_lentokentta(icao)
+
+    for i in tulos:
+        print(f"Lentokentän nimi: {i[0]}\nLetonkentän kunta: {i[1]}")
+
+
+if __name__ == "__main__":
+    main()

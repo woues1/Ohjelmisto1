@@ -1,14 +1,8 @@
-from SQL_YHTEYS import sql_yhteys
-
-yhteys = sql_yhteys()
+from SQL_YHTEYS import sql_search
 
 
 def lentokennta(maakoodi):
-    cur = yhteys.cursor()
-    cur.execute(f"SELECT type, COUNT(*) AS airport_count FROM airport WHERE iso_country = '{maakoodi}' GROUP BY type")
-    result = cur.fetchall()
-    cur.close()
-    yhteys.close()
+    result = sql_search(f"SELECT type, COUNT(*) AS airport_count FROM airport WHERE iso_country = '{maakoodi}' GROUP BY type")
     return result
 
 
